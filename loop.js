@@ -134,5 +134,48 @@ const myCoding = [
 
 // we called all the objects in the array an item
 myCoding.forEach((item) => {
-    console.log(item.language);
+    //console.log(item.language);
 })
+
+// if we want to store it in a variable, we need to return it manually see the output => JS
+// Python
+// ruby
+// cpp
+// java
+// undefined !~~~~~~~~~ came undefine cause there's no return. it still returns undefine
+
+// const values = coding.forEach((item) => {
+//     //console.log(item);
+//     return item;
+// })
+// console.log(values);
+
+const myNums = [1,2,3,2,1,3,42,13,4]
+
+//callback after that we give (num > 4) condition, 
+// const newNum = myNums.filter((num) => num > 4)
+// console.log(newNum);
+
+// const newNum = myNums.filter((num) => {
+//     return num < 4     // now it's not implicit return so as we started scope in {} so need to write return
+// })
+// console.log(newNum);
+
+// Same thing if we want to use forEach as filter
+
+// const newNUm = []
+
+// myNums.forEach((num) => {
+//     if(num < 4){
+//         newNUm.push(num)
+//     }
+// } )
+
+// console.log(newNUm);
+
+
+
+
+
+
+
