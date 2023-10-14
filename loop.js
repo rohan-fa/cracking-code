@@ -198,7 +198,7 @@ userBooks = books.filter((bk) => {
 
 // ~~~~~~~~~~~~~~~~~~~  MAP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-const myNumbs = [1,43,22,4,3,2,4,25,3,4,46,7,64,5]
+//const myNumbs = [1,43,22,4,3,2,4,25,3,4,46,7,64,5]
 
 //const nun = myNumbs.map((num) => num + 10 )
 
@@ -206,22 +206,51 @@ const myNumbs = [1,43,22,4,3,2,4,25,3,4,46,7,64,5]
 
 // we will learn chaining method 
 
-const num = myNumbs
+//const num = myNumbs
                     .map((num) => num * 10 ) //what is the num of the array? after multiplying the new arr is num now
                     .map((num) => num + 1)
                     .filter((num) => num < 25 )  // filer is true false kind of operation
 
 
 
-console.log(num);
+//console.log(num);
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   reduce ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+const myNumbs = [1,43,22,4,3,2,4,25,3,4,46,7,64,5]
 
+// const myNum = myNumbs.reduce((acc, currval) => {
+//     console.log(`acc ${acc} and currval ${currval}`);
+//     return acc + currval
+// }, 0);
+// console.log(myNum);
 
+const myTotal = myNumbs.reduce((acc, currval) => acc + currval, 0)
 
+//console.log(myTotal);
 
-
-
+const shoppingCard = [
+    {
+        itemName: "js Course",
+        price : 22992, 
+    },
+    {
+        itemName: "py Course",
+        price : 244, 
+    },
+    {
+        itemName: "mobile course",
+        price : 529, 
+    },
+    {
+        itemName: "data science",
+        price : 22992, 
+    },
+]
+//item denoting all the item in the object and we need to get the price
+const rpice = shoppingCard.reduce((acc, item) => acc + item.price, 0)
+console.log(rpice);
 
 
 
