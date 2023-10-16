@@ -11,3 +11,8 @@
 // promise me you will do that work after that work, or if that a success tell me or not success also tell me that
 
 
+// setTimeout() => it is a method, and also calls API, Timeout() we get it as a number
+
+//handler => is a callback and its a function without name. 
+
+//setInterval => it takes a break and after that it runs on and on. setTimeout does not do work again and again

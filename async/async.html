@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async</title>
+    <script scr="./project.js"></script>
+</head>
+<body>
+    <h1>Rohan</h1>
+    <button id="id">Stop</button>
+</body>
+<script>
+    const sayHi = function(){
+        console.log('Rohan');
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = 'best JS series'
+    }
+    // setTimeout(changeText, 2000)
+    const changeMe = setTimeout(changeText, 2000)
+    
+    // clearTimeout(changeMe)   //clearTimeout needs reference which timeout it need to stop. its not really much efficient. set clearTimeout to an event
+    document.querySelector('#stop').addEventListener("click", function(){
+        clearTimeout(changeMe);
+        console.log("stop");
+    })
+</script>
+</html>
